@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="image/menu/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Matcha Wave</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>Matcha Wave</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="index.html#location">Lokasi</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Menu Kami</h1>
+            <p>Jelajahi koleksi lengkap minuman dan dessert matcha premium</p>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="minuman">Minuman</button>
+                <!-- <button class="filter-btn" data-filter="makanan">Makanan</button> -->
+                <button class="filter-btn" data-filter="dessert">Dessert</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Minuman Items -->
+                <div class="menu-item" data-category="minuman">
+                    <div class="menu-image">
+                        <img src="image/menu/MatchaLatte.jpg" alt="Hot matcha latte with latte art in ceramic cup">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Matcha Latte Premium</h3>
+                        <p class="menu-category"><i class="fas fa-glass-whiskey"></i> Minuman</p>
+                        <p class="menu-desc">Nikmati kelembutan susu segar berpadu matcha premium dengan rasa yang menenangkan.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 11.000</span>
+                            <button class="btn btn-primary" onclick="openWhatsApp('Matcha Latte Premium', '11000')">
+                                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="minuman">
+                    <div class="menu-image">
+                        <img src="image/menu/MatchaW2E.jpg" alt="Iced matcha in tall glass with ice and straw">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Matcha W2E</h3>
+                        <p class="menu-category"><i class="fas fa-glass-whiskey"></i> Minuman</p>
+                        <p class="menu-desc">MATCHAAA AND MANGOO!! perpaduan mangga dengan matcha menghadirkan sensasi manis–fresh yang bikin mood naik.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 14.000</span>
+                            <button class="btn btn-primary" onclick="openWhatsApp('Matcha W2E', '14000')">
+                                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="minuman">
+                    <div class="menu-image">
+                        <img src="image/menu/MatchaCloud.jpg" alt="Matcha frappe with whipped cream topping in clear cup">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Matcha Cloud</h3>
+                        <p class="menu-category"><i class="fas fa-glass-whiskey"></i> Minuman</p>
+                        <p class="menu-desc">Matcha latte lembut dengan sentuhan creamy foam di atasnya, serasa minum awan versi matcha.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 14.000</span>
+                            <button class="btn btn-primary" onclick="openWhatsApp('Matcha Cloud', '14000')">
+                                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="minuman">
+                    <div class="menu-image">
+                        <img src="image/menu/MatchaStrawberry.jpg" alt="Matcha tea ceremony style in traditional bowl with bamboo whisk">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Matcha Pinky strawberry</h3>
+                        <p class="menu-category"><i class="fas fa-glass-whiskey"></i> Minuman</p>
+                        <p class="menu-desc">Matcha latte dengan cream strawberry yang manis dan segar, kombinasi cantik yang bikin nagih.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 15.000</span>
+                            <button class="btn btn-primary" onclick="openWhatsApp('Matcha Pinky strawberry', '15000')">
+                                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="minuman">
+                    <div class="menu-image">
+                        <img src="image/menu/MatchaBoo.jpg" alt="Matcha milk tea with boba pearls in clear cup">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Matcha Buble Boo</h3>
+                        <p class="menu-category"><i class="fas fa-glass-whiskey"></i> Minuman</p>
+                        <p class="menu-desc">Matcha creamy yang dipadukan dengan boba kenyal, cocok untuk kamu yang suka sensasi minum dan ngunyah.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 16.000</span>
+                            <button class="btn btn-primary" onclick="openWhatsApp('Matcha Boba', '16000')">
+                                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="minuman">
+                    <div class="menu-image">
+                        <img src="image/menu/Usucha.jpg" alt="Matcha mojito mocktail with mint leaves and lime">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Usucha (Pure Premium Matcha)</h3>
+                        <p class="menu-category"><i class="fas fa-glass-whiskey"></i> Minuman</p>
+                        <p class="menu-desc">Rasa matcha murni tanpa campuran, bold, earthy, dan autentik.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 9.000</span>
+                            <button class="btn btn-primary" onclick="openWhatsApp('Usucha (Pure Premium Matcha)', '9000')">
+                                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="minuman">
+                    <div class="menu-image">
+                        <img src="image/menu/MatchaCoco.jpg" alt="Matcha frappe with whipped cream topping in clear cup">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Matcha Coco</h3>
+                        <p class="menu-category"><i class="fas fa-glass-whiskey"></i> Minuman</p>
+                        <p class="menu-desc">Kesegaran air kelapa alami dengan layer matcha, menghasilkan rasa tropis yang unik dan menenangkan.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 15.000</span>
+                            <button class="btn btn-primary" onclick="openWhatsApp('Matcha Coco', '15000')">
+                                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>                
+ 
+                <div class="menu-item" data-category="minuman">
+                    <div class="menu-image">
+                        <img src="image/menu/MatchaExpresso.jpg" alt="Matcha mojito mocktail with mint leaves and lime">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Matcha Expresso</h3>
+                        <p class="menu-category"><i class="fas fa-glass-whiskey"></i> Minuman</p>
+                        <p class="menu-desc">Perpaduan unik matcha premium dengan shot espresso yang kuat, menghadirkan rasa bold namun tetap smooth.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 14.000</span>
+                            <button class="btn btn-primary" onclick="openWhatsApp('Matcha Expresso', '14000')">
+                                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="minuman">
+                    <div class="menu-image">
+                        <img src="image/menu/Americano.jpg" alt="Matcha mojito mocktail with mint leaves and lime">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Americano</h3>
+                        <p class="menu-category"><i class="fas fa-glass-whiskey"></i> Minuman</p>
+                        <p class="menu-desc">Espresso murni dengan air, rasa kopi yang kuat dan clean untuk penyuka karakter asli biji kopi.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 10.000</span>
+                            <button class="btn btn-primary" onclick="openWhatsApp('Americano', '10000')">
+                                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="minuman">
+                    <div class="menu-image">
+                        <img src="image/menu/CoffeLatte.jpg" alt="Matcha mojito mocktail with mint leaves and lime">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Coffe Latte</h3>
+                        <p class="menu-category"><i class="fas fa-glass-whiskey"></i> Minuman</p>
+                        <p class="menu-desc">Perpaduan espresso dan susu panas yang creamy, memberikan rasa lembut dan kaya untuk dinikmati kapan saja.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 14.000</span>
+                            <button class="btn btn-primary" onclick="openWhatsApp('Coffe Latte', '12000')">
+                                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dessert Items -->
+                <div class="menu-item" data-category="dessert">
+                    <div class="menu-image">
+                        <img src="image/menu/Tiramisu.jpg" alt="Matcha mochi japanese rice cake with red bean filling">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Tiramisu Cake</h3>
+                        <p class="menu-category"><i class="fas fa-cookie"></i> Dessert</p>
+                        <p class="menu-desc">Kue tiramisu lembut dengan aroma kopi dan cream manis yang menciptakan pengalaman dessert elegan.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 18.000</span>
+                            <button class="btn btn-primary" onclick="openWhatsApp('Tiramisu Cake', '18000')">
+                                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="dessert">
+                    <div class="menu-image">
+                        <img src="image/menu/SoftCookies.jpg" alt="Matcha mochi japanese rice cake with red bean filling">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Soft Cookies</h3>
+                        <p class="menu-category"><i class="fas fa-cookie"></i> Dessert</p>
+                        <p class="menu-desc">Cookies lembut dengan tekstur chewy di dalam dan renyah di luar, manisnya pas dan bikin nagih di setiap gigitan.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 10.000</span>
+                            <button class="btn btn-primary" onclick="openWhatsApp('Soft Cookies', '10000')">
+                                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>Matcha Wave</span>
+                    </div>
+                    <p>Enjoy your live with matcha wave!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="#location">Lokasi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +62 8810-2436-4890</li>
+                        <li><i class="fas fa-envelope"></i> matchawave@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Senin - Minggu: 08.00 - 22.00</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Dapatkan promo dan update terbaru</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Anda" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Matcha House. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
