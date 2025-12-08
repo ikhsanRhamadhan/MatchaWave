@@ -877,3 +877,57 @@ body {
   }
 }
 
+/* ==== RESPONSIVE FOR MOBILE ==== */
+@media (max-width: 768px) {
+
+    /* Grid sections jadi 1 kolom */
+    .about-intro,
+    .mv-grid,
+    .values-grid,
+    .team-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    /* Image di about supaya tidak terlalu besar */
+    .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    /* Card biar tidak terlalu lebar / mepet */
+    .mv-card,
+    .value-card,
+    .team-member {
+        padding: 20px !important;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /* Fix text agar tidak kepanjangan */
+    .member-bio,
+    .about-text p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Foto team biar tidak kegedean */
+    .member-image img {
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 16px;
+    }
+
+    /* Header text */
+    .section-title {
+        font-size: 24px;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+}
+
